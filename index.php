@@ -1,7 +1,7 @@
 <?php
 require "seesion_and_cookie.php";
 if($_SESSION['login'] == 'false' ){
-  header("Location: login.php");
+  header("Location: login_main.php");
 }
 
 
