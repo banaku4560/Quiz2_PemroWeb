@@ -1,7 +1,7 @@
 <?php
-require "method/seesion_and_cookie.php";
-require "method/DB_connect.php";
-require "method/login.php";
+require "seesion_and_cookie.php";
+require "DB_connect.php";
+require "login.php";
 if($_SESSION['login'] == 'true' ){
   header("Location: index.php");
 }
@@ -15,7 +15,7 @@ if($_SESSION['login'] == 'true' ){
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Halaman Login</title>
-  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
   <style>
       body{
         display: flex;
@@ -50,6 +50,6 @@ if($_SESSION['login'] == 'true' ){
     </table>
   </div>
 
-  <script src="bootstrap/bootstrap.min.js"></script>
+  <script src="bootstrap.min.js"></script>
 </body>
 </html>

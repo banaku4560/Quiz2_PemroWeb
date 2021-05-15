@@ -1,5 +1,5 @@
 <?php
-require "method/seesion_and_cookie.php";
+require "seesion_and_cookie.php";
 if($_SESSION['login'] == 'false' ){
   header("Location: login.php");
 }
@@ -13,7 +13,7 @@ if($_SESSION['login'] == 'false' ){
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Beranda</title>
-  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
 </head>
 <body class="bg-info">
   <div class="container bg-light">
@@ -34,6 +34,6 @@ if($_SESSION['login'] == 'false' ){
 
 
   
-<script src="bootstrap/bootstrap.min.js"></script>
+<script src="bootstrap.min.js"></script>
 </body>
 </html>
